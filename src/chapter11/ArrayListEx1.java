@@ -1,4 +1,4 @@
-package chapter11;
+package src.chapter11;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,7 +23,7 @@ public class ArrayListEx1 {
 		print(list1,list2);
 		
 		System.out.println("list1.contailsAll(list2): " +
-												list1.containsAll(list2)); //모든 요소 포함하고 있을 떄만
+												list1.containsAll(list2)); //紐⑤뱺 �슂�냼 �룷�븿�븯怨� �엳�쓣 �뻹留�
 		
 		list2.add("B");
 		list2.add("C");
@@ -33,9 +33,9 @@ public class ArrayListEx1 {
 		list2.set(3, "AA");
 		print(list1,list2);
 		
-		//list2에서 list1에 포함된 객체들을 삭제한다.
-		//뒤에서부터 시작하는 이유는 앞에서부터 제거하면 요소가 삭제될 때마다 빈공간을 채우기위해 
-		// 나머지 요소들이 자리 이동을 해서 이상한 결과를 가져온다.
+		//list2�뿉�꽌 list1�뿉 �룷�븿�맂 媛앹껜�뱾�쓣 �궘�젣�븳�떎.
+		//�뮘�뿉�꽌遺��꽣 �떆�옉�븯�뒗 �씠�쑀�뒗 �븵�뿉�꽌遺��꽣 �젣嫄고븯硫� �슂�냼媛� �궘�젣�맆 �븣留덈떎 鍮덇났媛꾩쓣 梨꾩슦湲곗쐞�빐 
+		// �굹癒몄� �슂�냼�뱾�씠 �옄由� �씠�룞�쓣 �빐�꽌 �씠�긽�븳 寃곌낵瑜� 媛��졇�삩�떎.
 		
 		for(int i = list2.size()-1; i >= 0; i--) {
 			if(list1.contains(list2.get(i)))
