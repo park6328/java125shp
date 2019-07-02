@@ -13,7 +13,7 @@ public class ArrayListEx1 {
 		list1.add(new Integer(1));
 		list1.add(new Integer(3));
 		
-		
+	hello world
 		ArrayList list2 = new ArrayList(list1.subList(1, 4));
 		print(list1,list2);
 		
